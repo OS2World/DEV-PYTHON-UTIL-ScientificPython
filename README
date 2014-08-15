@@ -1,0 +1,38 @@
+This archive is a binary installation package for the Scientific Python 
+extension, v2.4.9, written by Konrad Hinsen.
+
+See the LICENCE.ScientificPython, README.ScientificPython and PKG-INFO 
+files for information about Scientific Python.  For more detailed 
+information about this extension, and the source distribution, please 
+see Konrad's Scientific Python pages 
+(http://starship.python.net/crew/hinsen/scientific.html).
+
+The binary extension package was built from the Scientific Python source 
+using the DistUtils setup.py script included in the distribution, on the 
+OS/2+EMX port of Python 2.4.  No changes to the distributed source, 
+and the only change to the setup script was to specify the location of 
+the NetCDF components (my port of NetCDF 3.6).  Although an MPI port to 
+EMX exists, I haven't attempted to include MPI support in this build of 
+Scientific Python.  BSPlib support is not included either.
+
+You need the Python 2.4 port installed before you can install this 
+package - you should be able to get it where you obtained this archive.  
+You will also need Numerical Python (aka NumPy) installed to make full 
+use of this package - a binary distibution of Numpy should be available 
+where you found this archive.
+
+To install (assuming a working Python installation), change to the 
+directory containing the install script (install.cmd), and execute the 
+script.
+
+Please let me know if you encounter any problems with the installation 
+package - bug reports about Scientific Python should go to Konrad.
+
+This binary distribution is provided 'as-is', without any express or 
+implied warranty.  In no event will the packager be held liable for any 
+damages arising from the use of the software.
+
+Andrew MacIntyre
+andymac@bullseye.apana.org.au
+http://www.andymac.org/
+January 14, 2005.

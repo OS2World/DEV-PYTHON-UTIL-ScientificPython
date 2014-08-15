@@ -1,0 +1,93 @@
+ScientificPython is a collection of Python modules that are useful for
+scientific applications. Most of them need the Numerical Python
+extension (aka NumPy), which is available from SourceForge; see
+http://numpy.sourceforge.net for details.
+
+This is release 2.4 of ScientificPython. The major new feature since
+the last stable release, 2.2, is the high-level parallelization module
+Scientific.BSP. Please read the BSP tutorial (in Doc/PDF) before using
+this, the reference manual by itself is probably not sufficient to
+understand the functioning of this module. Also check README.BSP for
+the technical details of running BSP parallel programs. Another new
+module is Scientific.Signals.Models, which implements autoregressive
+modeling of time series.
+
+If you find bugs, please tell me, and if you improve something, please
+send me the modified version. I don't promise anything, but since I
+use these modules a lot for my own work, I have an interest in keeping
+them bug-free and usable.
+
+For updates, check
+
+  http://dirac.cnrs-orleans.fr/ScientificPython/
+
+from time to time.
+
+
+Konrad Hinsen
+Centre de Biophysique Moleculaire (CNRS)
+Rue Charles Sadron
+45071 Orleans Cedex 2
+France
+
+E-Mail: hinsen@cnrs-orleans.fr
+
+---------------------------------------------------------------------------
+
+Installation:
+-------------
+
+Required: Python 1.5 or higher, the BSP module requires Python 2.1 or
+higher. Most modules also require Numerical Python. If you want to use
+the netCDF interface module, you also need the netCDF library, version
+3.0 or higher.
+
+Installation is as simple as
+
+    python setup.py build
+    python setup.py install
+
+(the second command requires root priviledges on many installations).
+This will build the netCDF module if it can find a netCDF installation
+in either /usr/local or in /usr. If you you have installed netCDF
+somewhere else, you must edit the file setup.py and replace "None" in
+line 10 by the name of the base directory in quotes.
+
+
+Note for Macintosh users: Scientific Python is available through the
+fink project. However, you can also use the standard Unix installation
+procedure if you prefer.
+
+---------------------------------------------------------------------------
+
+Manual:
+-------
+
+The reference manual is provided in HTML and PDF formats:
+
+HTML: Doc/HTML/Scientific.html 
+
+PDF:  Doc/PDF/manual.pdf
+
+The DocBook XML source is also provided in Doc/XML. The BSP tutorial
+is in Doc/PDF/BSP_Tutorial.pdf.
+
+
+Examples:
+---------
+
+The directory Examples provides a few simple example applications,
+including a C extension module that uses the netCDF C-API.
+
+
+Using Scientific.Visualization.VMD under Windows
+------------------------------------------------
+
+If VMD is installed in its default location, everything should work
+fine automatically. Otherwise, an error message will be printed. The
+default location is
+
+	c:\Program Files\University of Illinois\VMD\vmd.exe
+
+or its equivalent on non-English Windows versions ("Program Files"
+changes its name).

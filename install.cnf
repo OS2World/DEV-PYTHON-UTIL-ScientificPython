@@ -1,0 +1,11 @@
+pkg_name=ScientificPython
+pkg_version=2.4.9
+pkg_description=Konrad Hinsen's collection of Scientific modules for Python, v2.4
+
+# This release depends on Python 2.4 binary install
+test_file_exists=%PYTHONHOME%/python24.dll
+# This release depends on NumPy being installed
+test_file_exists=%PYTHONHOME%/Lib/site-packages/Numeric.pth
+
+# Don't want to try and overwrite an existing installation
+test_file_not_exists=%PYTHONHOME%/Lib/site-packages/Scientific/__init__.py
