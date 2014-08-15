@@ -1,7 +1,7 @@
 DEV-PYTHON-UTIL-ScientificPython
 ================================
 
-Scientific extension to Python. SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering.
+Scientific extension to Python. ScientificPython is a Python library for common tasks in scientific computing.
 
 LICENSE
 ===============
@@ -18,4 +18,4 @@ AUTHORS
 
 LINKS
 ===============
-* http://www.scipy.org/
+* http://dirac.cnrs-orleans.fr/plone/software/scientificpython/
